@@ -11,8 +11,8 @@ eval "`dircolors`"
 alias ls='ls $LS_OPTIONS'
 alias ll='ls $LS_OPTIONS -l'
 alias la='ls $LS_OPTIONS -lA'
-#
-# Some more alias to avoid making mistakes:
-# alias rm='rm -i'
-# alias cp='cp -i'
-# alias mv='mv -i'
+
+#set additional aliases
+if [ -f ~/.bash_aliases ]; then
+     . ~/.bash_aliases 
+fi
